@@ -10,7 +10,7 @@ from github import Github
 # g = Github("user", "password")
 
 # or using an access token
-g = Github("****************************************")
+g = Github('****************************************')
 
 # Github Enterprise with custom hostname
 # g = Github(base_url="https://{hostname}/api/v3", login_or_token="access_token")
