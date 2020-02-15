@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Example of managing secrets in code."""
 
-import uu
+import base64
 from github import Github
 
 # First create a Github instance:
@@ -10,7 +10,7 @@ from github import Github
 # g = Github("user", "password")
 
 # or using an access token
-g = Github("9f9e0ef468ebb5737bd582110dd95cf5826c4570")
+g = Github("******")
 
 # Github Enterprise with custom hostname
 # g = Github(base_url="https://{hostname}/api/v3", login_or_token="access_token")
@@ -21,4 +21,5 @@ g = Github("9f9e0ef468ebb5737bd582110dd95cf5826c4570")
 
 repo = g.get_repo('lukwam/python-secrets')
 contents = repo.get_contents("README.md")
-print(uu.decode(contents.content))
+text = base64.b64decode(contents.content).decode('utf-8')
+print(text)
