@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+# Full name of GitHub repo (replace "USER/REPO" with the name of the repo)
+repo_name = 'USER/REPO'
+
+# GitHub token with public_repo scope
+token = '****************************************'

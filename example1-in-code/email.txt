@@ -1,0 +1,17 @@
+Hello lukwam,
+
+We noticed that a valid OAuth access token of yours was committed to a GitHub repository. Disclosing a valid access token would allow other people to interact with GitHub on your behalf, potentially altering data, your contact information, and billing data.
+
+As a precautionary measure, we have revoked the OAuth token. A new token will need to be generated in order to continue using OAuth to authenticate to GitHub.
+Here are a couple of steps you can do to ensure your account security has not been compromised:
+
+* Review any unauthorized OAuth applications, and remove any you don’t recognize: https://help.github.com/articles/reviewing-your-authorized-integrations/#reviewing-your-authorized-oauth-apps
+
+* Review you security log to ensure that no malicious activity has occurred: https://help.github.com/articles/reviewing-your-security-log/
+
+The commit in question is at https://github.com/lukwam/python-secrets/blob/a7136162567f44598c038f16bbd8e5dc45b94b4a/example1-incode/main.py
+
+Please feel free to contact us at https://github.com/contact if you have any questions or concerns.
+
+Thanks,
+GitHub.com

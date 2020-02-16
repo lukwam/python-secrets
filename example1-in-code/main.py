@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 """Example of managing secrets in code - BAD IDEA."""
 
+#
+# example from:
+# https://gist.github.com/mxmader/8281851a99d0cfb53a363286246c08d8
+#
+
 import base64
 from github import Github
 
@@ -19,7 +24,14 @@ g = Github('****************************************')
 # for repo in g.get_user().get_repos():
 #     print(repo.name)
 
+# get the repo
 repo = g.get_repo('lukwam/python-secrets')
-contents = repo.get_contents("README.md")
-text = base64.b64decode(contents.content).decode('utf-8')
+
+# get the README.md content
+content = repo.get_contents("README.md").content
+
+# convert content to string
+text = base64.b64decode(content).decode('utf-8')
+
+# print content
 print(text)

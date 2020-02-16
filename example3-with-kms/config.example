@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+# Full name of GitHub repo (replace "USER/REPO" with the name of the repo)
+repo_name = 'USER/REPO'
+
+# GitHub token encrypted with KMS and base64 encoded with public_repo scope
+token = '****************************************'
+
+# KMS Settings
+project_id = 'PROJECT_ID'
+location_id = 'global'
+key_ring_id = 'KEY_RING_ID'
+crypto_key_id = 'CRYPTO_KEY_ID'

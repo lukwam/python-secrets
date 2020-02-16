@@ -10,7 +10,14 @@ from config import repo_name, token
 # First create a Github instance using an access token
 g = Github(token)
 
+# get the repo
 repo = g.get_repo(repo_name)
-contents = repo.get_contents("README.md")
-text = base64.b64decode(contents.content).decode('utf-8')
+
+# get the README.md content
+content = repo.get_contents("README.md").content
+
+# convert content to string
+text = base64.b64decode(content).decode('utf-8')
+
+# print content
 print(text)
