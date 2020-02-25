@@ -5,8 +5,9 @@ import base64
 from github import Github
 from google.cloud import kms_v1
 
-# import settings from config file
+# import github settings from config file
 from config import repo_name, token
+# import kms settings from config file
 from config import project_id, location_id, key_ring_id, crypto_key_id
 
 
@@ -16,7 +17,7 @@ def decrypt_token():
     # from example:
     # https://cloud.google.com/kms/docs/encrypt-decrypt#decrypt
     #
-    
+
     # base64 decode the encrypted token
     ciphertext = base64.b64decode(token.encode('utf-8'))
 

@@ -6,8 +6,7 @@ from github import Github
 from google.cloud import secretmanager_v1beta1
 
 # import settings from config file
-from config import repo_name, token
-from config import project_id
+from config import repo_name, token, project_id
 
 def retrieve_token():
     """Retrieve the token from the github from Secret Manager."""
